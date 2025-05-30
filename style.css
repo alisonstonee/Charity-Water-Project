@@ -1,0 +1,5 @@
+<!-- Add this inside the <head> section of your HTML file -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">/* Use Montserrat as the main font for the whole page */
+body {
+  font-family: 'Proxima Nova', Avenir, Georgia, sans-serif; /* Montserrat is the main font, Arial is a backup */
+}
