@@ -4,23 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charity: Water - Landing Page</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-yellow: #77a8bb;
+      --dark-text: #222;
+      --light-bg: #f9f9f9;
+      --accent-blue: #0077b6;
+      --button-color: #bf6c46;
+      --button-hover: #fed8c1;
+      --light-font: #fff7e1;
+    }
+
     body {
-      font-family: Proxima Nova, Avenir, Georgia, sans-serif, sans-serif;
+      font-family: 'Avenir', 'Proxima Nova', 'Georgia', sans-serif;
       margin: 0;
       padding: 0;
+      color: var(--dark-text);
+      background-color: #ffffff;
       line-height: 1.6;
-      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+      margin-bottom: 10px;
     }
 
     .hero {
-      background-color: #8dc2d3;
-      color: #fff;
-      padding: 60px 20px;
+      background-color: var(--primary-yellow);
+      color: #000;
+      padding: 80px 20px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
+      text-align: left;
     }
 
     .hero-text {
@@ -29,42 +49,43 @@
     }
 
     .hero-text h1 {
-      font-size: 36px;
+      font-size: 42px;
       margin-bottom: 20px;
+      color: var(--light-font);
     }
 
     .hero-text p {
-      font-size: 16px;
+      font-size: 18px;
+      color: var(--light-font);
     }
 
     .cta-buttons {
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .cta-buttons a {
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 12px 24px;
       margin-right: 10px;
-      border-radius: 5px;
+      border-radius: 30px;
       font-weight: bold;
-      display: inline-block;
-      transition: 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .cta-blue {
       background-color: white;
-      color: navy;
-      border: 2px solid navy;
+      color: var(--button-color);
+      border: 2px solid var(--button-color);
     }
 
     .cta-yellow {
-      background-color: #f7c948;
+      background-color: var(--button-color);
       color: white;
     }
 
     .cta-buttons a:hover {
-      background-color: #ffd700;
-      color: #000;
+      background-color: var(--button-hover);
+      color: var(--light-font);
     }
 
     .hero-image {
@@ -75,68 +96,88 @@
     .hero-image img {
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
     .story {
-      padding: 40px 20px;
-      background-color: #f4f4f4;
+      padding: 60px 20px;
+      background-color: var(--light-bg);
       text-align: center;
     }
 
     .story h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 32px;
     }
 
     .story p {
+      font-size: 18px;
       max-width: 700px;
       margin: 0 auto;
     }
 
-    .donate-section {
-      padding: 40px 20px;
+    .impact {
+      background-color: #e0f7fa;
+      padding: 60px 20px;
       text-align: center;
+    }
+
+    .impact h2 {
+      font-size: 28px;
+    }
+
+    .impact-logo {
+      width: 40px;
+      height: auto;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .donate-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fff;
     }
 
     .donate-section h2 {
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .donate-options button {
       margin: 10px;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border: none;
-      background-color: #ffdb58;
+      background-color: var(--button-color);
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 30px;
       cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: #fff;
+    }
+
+    .donate-options button:hover {
+      background-color: var(--button-hover);
+      color: var(--light-font);
     }
 
     .testimonial {
-      background-color: #fff;
+      background-color: #fafafa;
       padding: 40px 20px;
       text-align: center;
       font-style: italic;
-    }
-
-    .impact {
-      background-color: #e0f7fa;
-      padding: 40px 20px;
-      text-align: center;
-      font-weight: bold;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
   <section class="hero">
     <div class="hero-text">
-      <h1>Be the Generation that stops the Water Crisis.</h1>
+      <h1>Be the Generation that Stops the Water Crisis.</h1>
       <p>100% of your donation funds clean water projects—and you’ll see your direct impact with every dollar. Watch through real-time updates, photos, and GPS coordinates. Join a transparent movement powered by purpose, not profit.</p>
       <div class="cta-buttons">
-        <a href="#" class="cta-blue">Become a Monthly Donor!</a>
-        <a href="#" class="cta-yellow">Change a Life Today!</a>
+        <a href="#" class="cta-blue">Become a Monthly Donor</a>
+        <a href="#" class="cta-yellow">Change a Life Today</a>
       </div>
     </div>
     <div class="hero-image">
@@ -145,10 +186,12 @@
   </section>
 
   <section class="story">
-    <h2>Your $10 Goes Far</h2> 
+    <h2>Your $10 Goes Far</h2>
     <p>With just $10, you can provide 11,000 liters of clean water to a family in need. This is enough to support their daily needs for 125 days, ensuring they have access to safe drinking water and improving their quality of life.</p>
+  </section>
+
   <section class="impact">
-    <h2>🌍 You've Helped 100,432 People Get Clean Water</h2>
+    <h2><img src="https://www.charitywater.org/assets/images/brand/cw-drop-yellow.svg" alt="Charity Water Logo" class="impact-logo">You've Helped 100,432 People Get Clean Water</h2>
   </section>
 
   <section class="donate-section">

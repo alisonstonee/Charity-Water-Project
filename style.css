@@ -1,5 +1,21 @@
-<!-- Add this inside the <head> section of your HTML file -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">/* Use Montserrat as the main font for the whole page */
+/* Set the background color of the whole page */
 body {
-  font-family: 'Proxima Nova', Avenir, Georgia, sans-serif; /* Montserrat is the main font, Arial is a backup */
+  background-color: #77a8bb; /* Light blue background */
+  font-family: 'Nunito', Arial, sans-serif; /* Nunito is the main font, Arial is a backup */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', Arial, sans-serif; /* Headings also use Nunito */
+}
+p {
+  font-family: 'Nunito', Arial, sans-serif; /* Paragraphs use Nunito */
+}
+
+/* Style all buttons */
+button {
+  background-color: #bf6c46; /* Set button background to a warm brown color */
+  color: white;              /* Make button text white for contrast */
+  border: none;              /* Remove default border */
+  padding: 10px 20px;        /* Add some padding for a better look */
+  border-radius: 4px;        /* Slightly round the corners */
+  cursor: pointer;           /* Change cursor to pointer when hovering */
 }
