@@ -19,3 +19,9 @@ button {
   border-radius: 4px;        /* Slightly round the corners */
   cursor: pointer;           /* Change cursor to pointer when hovering */
 }
+
+/* Make images inside the hero-image class smaller and rounder */
+.hero-image img {
+  width: 50px;         /* Makes the image smaller */
+  border-radius: 20px;  /* Rounds the corners of the image */
+}
