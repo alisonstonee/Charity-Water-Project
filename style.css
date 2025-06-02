@@ -20,8 +20,10 @@ button {
   cursor: pointer;           /* Change cursor to pointer when hovering */
 }
 
-/* Make images inside the hero-image class smaller and rounder */
+/* Make the hero image smaller */
 .hero-image img {
-  width: 50px;         /* Makes the image smaller */
-  border-radius: 20px;  /* Rounds the corners of the image */
+  width: 150px;        /* Sets the image width to 150 pixels */
+  height: auto;        /* Keeps the image from looking squished */
+  border-radius: 12px; /* Keeps the corners slightly rounded */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Adds a soft shadow */
 }
