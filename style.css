@@ -20,10 +20,17 @@ button {
   cursor: pointer;           /* Change cursor to pointer when hovering */
 }
 
-/* Make the hero image smaller */
+/* Make the hero image smaller and responsive */
+/* This will keep the image from being too big on any screen */
 .hero-image img {
-  width: 150px;        /* Sets the image width to 150 pixels */
-  height: auto;        /* Keeps the image from looking squished */
-  border-radius: 12px; /* Keeps the corners slightly rounded */
+  width: 100%;           /* Image takes up all available space in its container */
+  max-width: 200px;      /* But never gets bigger than 200 pixels */
+  height: auto;          /* Keeps the image from looking squished */
+  border-radius: 12px;   /* Rounds the corners */
   box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Adds a soft shadow */
+  margin: 20px auto;     /* Adds space around the image and centers it */
+  display: block;        /* Makes sure the image is centered */
 }
+
+/* Add this inside the <head> section of your HTML */
+<meta name="viewport" content="width=device-width, initial-scale=1">
